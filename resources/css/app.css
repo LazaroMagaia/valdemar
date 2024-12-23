@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#notification {
+    animation: fadeOut 8s forwards; /* O tempo de animação foi aumentado para 8 segundos */
+}
+#progressBar {
+    transition: width 0.08s ease; /* Ajuste a duração conforme necessário */
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* DataTables Custom Style */
+.dataTables_wrapper {
+    margin: 20px; /* Margem ao redor da tabela */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #cbd5e1; /* Border color */
+    background: #f3f4f6; /* Background color */
+    color: #4a5568; /* Text color */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+ 
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #2563eb; /* Background color on hover */
+    color: white; /* Text color on hover */
+    
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #4a5568; /* Background for current page */
+    color: white; /* Text color for current page */
+}
+.dataTables_info
+{
+    padding: 10px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #cbd5e1; /* Input border color */
+    border-radius: 0.25rem; /* Input border radius */
+    padding: 0.5rem; /* Padding */
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #cbd5e1; /* Select border color */
+    border-radius: 0.25rem; /* Select border radius */
+    padding: 0.5rem; /* Padding */
+    
+}
+
+.dataTables_wrapper table {
+    width: 100%; /* Tabela ocupar 100% do container */
+    border-collapse: collapse; /* Remover espaçamento entre células */
+}
+
+.dataTables_wrapper th {
+    background-color: #f9fafb; /* Header background color */
+    color: #4a5568; /* Header text color */
+    padding: 0.75rem; /* Padding nas células do header */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.dataTables_wrapper td {
+    padding: 0.75rem; /* Padding nas células do body */
+    border-bottom: 1px solid #e2e8f0; /* Linha de divisão entre as linhas */
+}
+
+
